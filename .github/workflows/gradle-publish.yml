@@ -1,9 +1,7 @@
 name: ESU Dev Build
 
 on:
-  push:
-    branches:
-      - master
+  push
 
 jobs:
   build:
@@ -34,4 +32,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ESU-Dev-Build-Jar
-          path: build/libs/*.jar
+          path: bukkit/build/libs/*.jar
